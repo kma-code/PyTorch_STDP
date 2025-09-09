@@ -46,7 +46,7 @@ def calc_dW_from_spike_trains(pre_spike_train, post_spike_train, causal_STDP_ker
 
 	# expand kernel to batch size and post-synaptic neurons
 	post_kernel = anticausal_STDP_kernel.repeat((batch_size, n_post, 1))
-	# convolve the pre-synaptic spikes with the kernel along the time axis
+	# convolve the post-synaptic spikes with the kernel along the time axis
 	post_tracker = F2.convolve(post_spike_train, post_kernel)[:,:,:len_spike_trains]
 	assert post_spike_train.shape == post_tracker.shape
 
