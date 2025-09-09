@@ -20,10 +20,11 @@ python calc_STDP.py
 
 ## What it does
 
-The function `calc_dW_from_spike_trains` implements the idea of implementing STDP via spike-tracking from the Neuromatch Academy [Bonus Tutorial: Spike-timing dependent plasticity (STDP)](https://compneuro.neuromatch.io/tutorials/W2D3_BiologicalNeuronModels/student/W2D3_Tutorial4.html#keeping-track-of-pre-and-postsynaptic-spikes) (Content creators: Qinglong Gu, Songtin Li, John Murray, Richard Naud, Arvind Kumar).
-
 The relevant code snippet is this:
+
 [https://github.com/kma-code/snnTorch_STDP/blob/2bd9360d5838f39cd18f6b48727be7ea97324dda/calc_STDP.py#L18](https://github.com/kma-code/snnTorch_STDP/blob/2bd9360d5838f39cd18f6b48727be7ea97324dda/calc_STDP.py#L18-L57)
+
+The function `calc_dW_from_spike_trains` implements the idea of implementing STDP via spike-tracking I got from the Neuromatch Academy [Bonus Tutorial: Spike-timing dependent plasticity (STDP)](https://compneuro.neuromatch.io/tutorials/W2D3_BiologicalNeuronModels/student/W2D3_Tutorial4.html#keeping-track-of-pre-and-postsynaptic-spikes) (Content creators: Qinglong Gu, Songtin Li, John Murray, Richard Naud, Arvind Kumar).
 
 This implementation is **offline/batched**, meaning that STDP is not calculated during every time step (online), but across a recorded time series of `n_time_steps` steps (e.g. a stimulus presentation).
 
