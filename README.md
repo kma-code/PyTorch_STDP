@@ -1,6 +1,6 @@
-# snnTorch STDP: Efficient implementation of spike-timing-dependent plasticity in snnTorch/PyTorch
+# PyTorch STDP: Efficient implementation of spike-timing-dependent plasticity in PyTorch
 
-I was surprised that I couldn't find an efficient implementation of STDP for use in snnTorch anywhere. So here it is: a fast PyTorch implementation for offline STDP.
+I was surprised that I couldn't find an efficient implementation of STDP anywhere. So here it is: a fast PyTorch implementation for offline STDP.
 
 ## How to install
 
@@ -22,7 +22,7 @@ python calc_STDP.py
 
 The relevant code snippet is this:
 
-[https://github.com/kma-code/snnTorch_STDP/blob/2bd9360d5838f39cd18f6b48727be7ea97324dda/calc_STDP.py#L18](https://github.com/kma-code/snnTorch_STDP/blob/2bd9360d5838f39cd18f6b48727be7ea97324dda/calc_STDP.py#L18-L57)
+[https://github.com/kma-code/PyTorch_STDP/blob/2bd9360d5838f39cd18f6b48727be7ea97324dda/calc_STDP.py#L18](https://github.com/kma-code/PyTorch_STDP/blob/2bd9360d5838f39cd18f6b48727be7ea97324dda/calc_STDP.py#L18-L57)
 
 The function `calc_dW_from_spike_trains` implements the idea of implementing STDP via spike-tracking I got from the Neuromatch Academy [Bonus Tutorial: Spike-timing dependent plasticity (STDP)](https://compneuro.neuromatch.io/tutorials/W2D3_BiologicalNeuronModels/student/W2D3_Tutorial4.html#keeping-track-of-pre-and-postsynaptic-spikes) (Content creators: Qinglong Gu, Songtin Li, John Murray, Richard Naud, Arvind Kumar).
 
