@@ -4,7 +4,7 @@
 	
 	Kevin Max, OIST, 2025
 
-	https://github.com/kma-code/snnTorch_STDP
+	https://github.com/kma-code/PyTorch_STDP
 """
 
 
